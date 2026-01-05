@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Unified Public Transport Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '3rem',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease; }
+    .mobile-frame {
+      max-width: 430px;
+      margin: 0 auto;
+      height: 100vh;
+      overflow: hidden;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: white;
+      position: relative;
+    }
+    .dark .mobile-frame {
+      border-color: #1e293b;
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    .dark ::-webkit-scrollbar-thumb { background: #475569; }
+    
+    .route-card-enter { opacity: 0; transform: translateY(20px); }
+    .route-card-enter-active { opacity: 1; transform: translateY(0); transition: all 0.5s ease; }
+  </style>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script>
+    // Firebase initialization (optional - will use mock auth if not configured)
+    if (typeof firebase !== 'undefined') {
+      try {
+        // Users can add their Firebase config here
+        // For now, we'll use mock auth as fallback
+        const firebaseConfig = window.FIREBASE_CONFIG || null;
+        if (firebaseConfig) {
+          firebase.initializeApp(firebaseConfig);
+          window.firebase = firebase;
+        }
+      } catch (e) {
+        console.log('Firebase not configured, using mock authentication');
+      }
+    }
+  </script>
+  <script type="importmap">
+  {
+    "imports": {
+      "react/": "https://esm.sh/react@^19.2.3/",
+      "react": "https://esm.sh/react@^19.2.3",
+      "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    }
+  }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

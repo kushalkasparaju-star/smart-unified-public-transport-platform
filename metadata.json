@@ -1,0 +1,7 @@
+{
+  "name": "Smart Unified Public Transport Platform",
+  "description": "A high-fidelity multi-modal transport platform featuring live tracking, eco-rewards, and an integrated admin dashboard.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
