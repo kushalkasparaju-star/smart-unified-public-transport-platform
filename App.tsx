@@ -16,6 +16,7 @@ import { ICON_MAP } from './constants';
 import { Moon, Sun, LogOut } from 'lucide-react';
 import { AuthProvider, useAuth } from './authContext';
 import { DriverAuthProvider, useDriverAuth } from './driverAuthContext';
+import initAnalytics from './src/firebase';
 
 const AppContent: React.FC = () => {
   const [activeScreen, setActiveScreen] = useState<Screen>('home');
@@ -31,6 +32,11 @@ const AppContent: React.FC = () => {
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    // initialize analytics in background
+    initAnalytics();
+  }, []);
 
   // Handle driver logout - redirect to driver login if on driver route
   useEffect(() => {
