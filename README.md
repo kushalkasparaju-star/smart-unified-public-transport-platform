@@ -1,99 +1,133 @@
-# Public Transport Avoidance – Smart Unified Public Transport Platform
+🚍 Public Transport Avoidance
+Smart Unified Public Transport Platform
 
 Public Transport Avoidance is a smart, unified digital platform designed to reduce people’s dependence on private vehicles by making public transport more attractive, reliable, and easy to use.
 
-The system integrates multiple modes of public transport into a single application and provides users with real-time information, route suggestions, cost comparison, and eco-friendly travel insights.
+The platform integrates multiple modes of public transport into a single application and provides users with real-time information, smart route suggestions, cost comparison, and eco-friendly travel insights.
 
----
+📌 Problem Statement
 
-## 📌 Problem Statement
+In many cities, people prefer private vehicles even when public transport options are available.
+This leads to several serious problems such as:
 
-In many cities, people prefer private vehicles even when public transport is available.  
-This leads to several issues such as:
+Traffic congestion
 
-- Traffic congestion
-- Increased air pollution
-- Higher fuel consumption
-- Stress and time loss due to traffic
-- Underutilization of public transport services
+Increased air pollution
 
-The main reason for this behavior is the lack of reliable information, poor integration between transport modes, and inconvenience in planning journeys.
+Higher fuel consumption
 
----
+Stress and time loss due to traffic
 
-## 💡 Proposed Solution
+Underutilization of public transport services
 
-The Public Transport Avoidance platform addresses these problems by offering:
+The primary reasons for this behavior include:
 
-- A single unified application for multiple public transport modes
-- Real-time tracking and route suggestions
-- Cost-efficient and eco-friendly travel options
-- User-friendly interface for easy journey planning
+Lack of reliable real-time information
 
-The goal is to encourage people to choose public transport over private vehicles.
+Poor integration between transport modes
 
----
+Difficulty and inconvenience in journey planning
 
-## ✨ Key Features
+💡 Proposed Solution
 
-- Unified platform for buses, metro, autos, and taxis
-- Smart route recommendations based on time and cost
-- Real-time transport tracking
-- Eco-friendly travel score to promote sustainable travel
-- Clean and simple user interface
-- Mobile-first responsive design
+The Public Transport Avoidance platform addresses these challenges by providing:
 
----
+A single unified application for multiple public transport modes
 
-## 🛠️ Technologies Used
+Smart route suggestions based on time, cost, and sustainability
 
-### Frontend
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
+Real-time travel insights to reduce uncertainty
 
-### Backend (Planned / Extendable)
-- API-based integration with transport services
+A simple and user-friendly interface for easy journey planning
 
-### Tools & Libraries
-- Node.js
-- Lucide Icons
+The main goal is to encourage people to choose public transport instead of private vehicles.
 
----
+✨ Key Features
 
-## 🔄 System Workflow
+Unified platform for buses, metro, autos, and taxis
 
-1. User opens the application
-2. User selects source and destination
-3. System analyzes available public transport options
-4. Best routes are suggested based on time, cost, and eco impact
-5. User selects the preferred route and travels using public transport
+Smart route recommendations
 
----
+Real-time transport tracking (prototype-level)
 
-## 🎯 Advantages
+Eco-friendly travel score to promote sustainable commuting
 
-- Reduces traffic congestion
-- Encourages eco-friendly transportation
-- Saves travel cost for users
-- Improves utilization of public transport
-- Reduces pollution and fuel usage
+Clean and intuitive user interface
 
----
+Mobile-first responsive design
 
-## 🚀 Future Enhancements
+🛠️ Technologies Used
+🔹 Frontend
 
-- Live GPS-based vehicle tracking
-- Ticket booking and digital payments
-- AI-based personalized travel suggestions
-- Government transport API integration
-- Multilingual support
-- Android and iOS mobile applications
+React
 
----
+TypeScript
 
-## 📄 Conclusion
+Vite
 
-Public Transport Avoidance is a step towards smarter and more sustainable urban mobility.  
+Tailwind CSS
+
+🔹 Google Technologies
+
+Google Firebase Analytics
+
+Used to monitor application usage and user interactions in the background
+
+Google Fonts
+
+Used for consistent and accessible UI typography
+
+✅ All Google services used are free-tier and do not require any paid license or billing.
+
+🔹 Backend (Planned / Extendable)
+
+API-based integration with public transport services
+
+🔹 Tools & Libraries
+
+Node.js
+
+Lucide Icons
+
+🔄 System Workflow
+
+User opens the application
+
+User selects source and destination
+
+System analyzes available public transport options
+
+Best routes are suggested based on time, cost, and eco impact
+
+User selects the preferred route and travels using public transport
+
+🎯 Advantages
+
+Reduces traffic congestion
+
+Encourages eco-friendly transportation
+
+Saves travel cost for users
+
+Improves utilization of public transport services
+
+Reduces pollution and fuel consumption
+
+🚀 Future Enhancements
+
+Live GPS-based vehicle tracking
+
+Ticket booking and digital payments
+
+AI-based personalized travel suggestions
+
+Government transport API integration
+
+Multilingual support
+
+Android and iOS mobile applications
+
+📄 Conclusion
+
+Public Transport Avoidance is a step towards smarter and more sustainable urban mobility.
 By simplifying public transport usage and improving user experience, the platform aims to reduce private vehicle dependency and promote a cleaner, greener environment.
